@@ -21,11 +21,6 @@ resource "ibm_is_subnet" "subnet1" {
   vpc             = "${ibm_is_vpc.vpc1.id}"
   zone            = "${local.ZONE1}"
   total_ipv4_address_count = 256
-
-  provisioner "local-exec" {
-    command = "sleep 300"
-    when    = "destroy"
-  }
 }
 
 resource "ibm_is_vpn_gateway" "VPNGateway1" {
@@ -114,11 +109,6 @@ resource "ibm_is_subnet" "subnet2" {
   vpc             = "${ibm_is_vpc.vpc2.id}"
   zone            = "${local.ZONE2}"
   total_ipv4_address_count = 256
-
-  provisioner "local-exec" {
-    command = "sleep 300"
-    when    = "destroy"
-  }
 }
 
 resource "ibm_is_ipsec_policy" "example" {
