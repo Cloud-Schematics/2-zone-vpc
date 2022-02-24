@@ -28,7 +28,7 @@ Before you can apply the template in IBM Cloud, complete the following steps.
 3.  Install the `ibmcloud terraform` and `ibmcloud is` CLI plug-ins for Schematics and VPC infrastructure. **Tip**: To update your current plug-ins, run `ibmcloud plugin update`.
     *  `ibmcloud plugin install schematics`
     *  `ibmcloud plugin install vpc-infrastructure`
-4.  [Create or use an existing SSH key for VPC virtual servers](https://cloud.ibm.com/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys).
+4.  [Create or use an existing SSH key for VPC virtual servers](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys).
 
 ## Terraform version requirements :  
 
